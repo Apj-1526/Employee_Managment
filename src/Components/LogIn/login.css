@@ -1,0 +1,108 @@
+.login-background {
+  background-color: #64c9f1; /* added a dark gray background color */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Main {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* added a full viewport height */
+}
+
+.Container {
+  background-color: #f1d327; /* added a dark gray background color */
+  box-shadow: 5px 5px 10px 10px;
+  width: 500px;
+  border-radius: 20px;
+  padding: 35px 40px;
+  backdrop-filter: blur(10px);
+}
+
+.heading {
+  text-align: center;
+  color: white;
+  font-size: 30px; /* increased font size */
+  font-weight: bold; /* added bold font weight */
+}
+
+.inputtt input {
+  background-color: white;
+  width: 100%;
+  font-size: 25px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  margin: 25px 0;
+  padding: 10px; /* added padding */
+}
+
+.remember {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  font-size: 25px;
+  color: white;
+}
+
+.remember a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.inputtt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.end-button,
+.forgot-password-button {
+  text-align: center;
+  width: 45%;
+  font-size: 25px;
+  border-radius: 10px;
+  border: none;
+  margin: 30px 0 10px 0;
+  padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.forgot-password-button {
+  align-self: flex-start;
+}
+
+.end button:hover,
+.forgot-password-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+ .hod,
+ .inputtt,
+ .remember,
+ .end {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+ .heading {
+    font-size: 20px;
+  }
+}
